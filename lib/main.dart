@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'feteps.dart';
+import 'tela1.dart';
+import 'tela2.dart';
 
-void main() => runApp(Myapp());
+void main() {
+  runApp(telas());
+}
 
-class Myapp extends StatelessWidget {
+class telas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.red,
-        ),
-        home: inicio());
+      debugShowCheckedModeBanner: false,
+      home: FetepsWidgetTela2(),
+    );
   }
 }
